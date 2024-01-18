@@ -1,0 +1,131 @@
+@import "../../styles/partials/colors";
+
+.contactInformation {
+  width: 100%;
+  height: 600px;
+
+  background-image: url("/images/desktop/contactInformation.jpg");
+  background-position: bottom;
+  background-size: cover;
+
+  display: grid;
+  align-items: flex-start;
+}
+
+.contactInformation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 600px;
+
+  background: radial-gradient(
+    43.9% 43.9% at 50% 50%,
+    rgba($color--blue-dark, 0.828) 0%,
+    rgba($color--blue-dark, 0.92) 100%
+  );
+}
+
+.container {
+  width: 80%;
+
+  margin-top: 40px;
+
+  display: grid;
+}
+
+.content {
+  height: 384px;
+
+  display: grid;
+
+  z-index: 2;
+
+  font-family: "Inter";
+}
+
+.link {
+  width: 78px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  text-decoration: none;
+  margin-bottom: 24px;
+  color: $color--text;
+
+  cursor: pointer;
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+
+  display: grid;
+
+  transition: transform 0.3s;
+}
+
+.link:hover {
+  transition: 0.2s;
+  color: $color--text;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+  background-color: $color--text;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 120%;
+
+  color: $color--text;
+
+  text-align: left;
+}
+
+.paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+
+  color: $color--text;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+
+  color: $color--text-on-color;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+
+  gap: 20px;
+
+  color: $color--text;
+}
+
+.form {
+  color: white;
+
+  z-index: 2;
+}

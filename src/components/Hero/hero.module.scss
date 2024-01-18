@@ -1,0 +1,99 @@
+@import "../../styles/partials/colors";
+
+.hero {
+  width: 100%;
+  display: grid;
+
+  background-color: $color--gray-light;
+
+  padding: 49px 0 100px 0;
+}
+
+.container {
+  width: 75%;
+}
+
+.content {
+  height: 270px;
+
+  display: grid;
+
+  z-index: 2;
+}
+
+.body {
+  width: 100%;
+  height: 174px;
+
+  font-family: "Inter";
+  color: $color--secondary-dark;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 120%;
+
+  padding-bottom: 30px;
+}
+
+.image {
+  width: 635px;
+  height: 440px;
+}
+
+@media screen and (max-width: 767px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .getItNow {
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 115%;
+
+      padding-bottom: 20px;
+    }
+  }
+
+  .image {
+    width: 340px;
+    height: 245px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .getItNow {
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      line-height: 115%;
+    }
+  }
+}

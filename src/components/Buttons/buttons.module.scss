@@ -1,0 +1,62 @@
+@import "styles/partials/colors";
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-radius: 8px;
+  border: solid 1px transparent;
+  padding: 12px 32px;
+
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+
+  gap: 10px;
+}
+
+.primaryButton {
+  background-color: $color--primary;
+  color: $color--gray-1;
+
+  border: $color--primary;
+}
+
+.primaryButton:hover {
+  background-color: $color--primary-dark;
+}
+
+.secondaryButton {
+  background-color: inherit;
+  color: $color--secondary;
+
+  border: solid 1.5px $color--secondary;
+}
+
+.secondaryButton:hover {
+  background-color: rgba($color--gray-5, 0.4);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+// Size classes
+.buttonLarge {
+  padding: 12px 72px;
+}
+
+.buttonMedium {
+  padding: 12px 24px;
+}
+
+.buttonSmall {
+  padding: 12px 12px;
+}
